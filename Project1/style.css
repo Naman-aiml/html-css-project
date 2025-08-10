@@ -1,0 +1,39 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page {
+  border: 10px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(182, 202, 209);
+  min-height: 100vh;
+
+}
+img {
+  
+  border-radius: 110px;
+  display: flex;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+  
+
+}
+#name{
+  text-align: left;
+  padding: 4px;
+  right: 10px;
+}
+footer {
+  text-align: right;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+footer a:hover {
+  text-decoration: none;
+}
+ul {
+  padding-left: 40px;
+  line-height: 1.6;
+}

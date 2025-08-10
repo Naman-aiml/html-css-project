@@ -1,0 +1,108 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8em;
+    font-weight: 400;
+    color: #666;
+}
+.pimg1{
+    background-image: url(images/image3.jpg);
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url(images/image2.webp);
+    min-height: 400px;
+}
+.pimg3{
+    background-image: url(images/image4.jpg);
+    min-height: 100%;
+}
+.pimg4{
+    background-image: url(images/image1.png);
+    min-height: 400px;
+}
+.pimg1,.pimg2,.pimg3,.pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+}
+.textbg{
+    background-color: #313533;
+    color: #fff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+     transition: all 0.7s ease;
+}
+.textbg:hover {
+    transform: translateY(-5px);  
+     /* box ke uppar jab arrow jayega to mast glow karega  */
+     box-shadow: 0 12px 40px rgba(140, 223, 155, 0.9); 
+}
+.page1,.page2,.page3,.page4{
+    padding: 50px 16%;
+    text-align: center;
+    max-width: 1200px;
+    margin: o auto;
+}
+
+.page1 h2, .page2 h2, .page3 h2, .page4 h2 {
+    font-size: 2.5rem;
+    color: #674f4f;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 1000px;
+}
+.page2, .page4 {
+    background-color: #fff;
+}
+.page1 p, .page2 p, .page3 p, .page4 p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #555;
+    text-align: left; 
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .ptext {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+    
+    .textbg {
+        padding: 15px;
+    }
+    
+    .page1, .page2, .page3, .page4 {
+        padding: 40px 5%;
+    }
+    
+    .page1 h2, .page2 h2, .page3 h2, .page4 h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Fix parallax on mobile - it often causes performance issues */
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+        background-attachment: scroll;
+    }
+} 
+
+
+
