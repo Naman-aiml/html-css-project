@@ -6,17 +6,17 @@
 }
 #page {
   border: 10px solid black;
-  padding: 10px;
+  padding: 40px;
   border-radius: 10px;
   background-color: rgb(182, 202, 209);
   min-height: 100vh;
 
 }
 img {
-  
-  border-radius: 110px;
+  border-radius: 50%;
   display: flex;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgb(160, 158, 158);
   
 
 }
@@ -37,3 +37,8 @@ ul {
   padding-left: 40px;
   line-height: 1.6;
 }
+#page img:hover{
+  transform: scale(1.1);      
+    filter: invert(.1);
+}
+
