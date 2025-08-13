@@ -1,8 +1,136 @@
 *{
     margin: 0;
-    padding: 0;
-}
+    padding: 20px;
 
-body{ 
-    background-color: liner-gradient(135deg, red, yellow, green);
 }
+html , body{
+    
+    background: linear-gradient(135deg ,rgb(184, 228, 135) 0%,rgb(224, 107, 171) 100%);
+}
+.center-content{
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+.center-content img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    
+}
+.center-content img :hover{
+     transform: scale(1.25) translateY(-15px);
+            box-shadow: 0 20px 40px rgba(225, 163, 163, 0.3);
+        
+}
+.main-text h1{
+    color: black;
+    font-size: 60px;
+}
+.main-text p{
+    color: black;
+    font-size: 30px;
+}
+/* yaha tak mera landing page ka first view complete ho gya  */
+
+/* ab grid view wala kaam  */
+.section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 4rem 0 2rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        /* Current Companies Cards */
+        .current-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            border-radius: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .current-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .current-card:hover::before {
+            left: 100%;
+        }
+
+        .current-card:hover {
+            transform: scale(1.25) translateY(-15px);
+            box-shadow: 0 20px 40px rgba(225, 163, 163, 0.3);
+        }
+
+        /* Previous Companies Cards */
+        .previous-card {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .previous-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.8s;
+        }
+
+        .previous-card:hover::before {
+            left: 100%;
+        }
+
+        .previous-card:hover {
+            transform: scale(1.05) translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
